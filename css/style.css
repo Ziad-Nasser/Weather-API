@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+:root {
+  --primary-color: #009ad8;
+  --secondary-color: #bfc1c8;
+  --white-color: #fff;
+  --bg-primary: #1e202b;
+  --bg-secondary: #262936;
+}
+
+body {
+  color: var(--secondary-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+/* ------------------- Nav ------------------*/
+nav .nav-link,
+.site-title {
+  color: var(--white-color);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-link:focus,
+.nav-link:hover,
+.nav-link.active {
+  outline: 2px solid var(--primary-color);
+  border-radius: 30px;
+}
+
+.navbar {
+  padding: 30px 0;
+  background-color: var(--bg-primary);
+}
+
+.brand-img {
+  width: 64px;
+  aspect-ratio: auto 64 / 38;
+  height: 38px;
+}
+
+.site-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 0;
+}
+
+.site-description {
+  font-size: 12px;
+  display: block;
+  color: var(--secondary-color);
+}
+
+.nav-toggle-icon {
+  color: var(--white-color);
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  padding: 10px 15px;
+}
+
+.navbar-toggler:hover {
+  border-radius: 50%;
+  outline: 2px solid var(--primary-color);
+}
+
+.navbar-toggler:hover .nav-toggle-icon {
+  color: var(--primary-color);
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+/* ---------------------Weather Cards-------------------*/
+#weather {
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-color: var(--bg-primary);
+  min-height: 65vh;
+}
+.form-control,
+.form-control:focus-visible,
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+.form-control,
+.form-control:focus-visible,
+.form-control:focus {
+  background: #1e202b;
+  color: var(--white-color);
+  padding: 20px 100px 20px 20px;
+  border-radius: 30px;
+}
+.btn-style {
+  background: var(--primary-color);
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--white-color);
+}
+.btn-style:hover,
+.btn:active {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-size: 13px;
+}
+
+.row > * {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.weather-date-info {
+  background-color: #2d303d;
+}
+
+.weather-card-3,
+.weather-card-body {
+  background-color: #323544;
+}
+
+.weather-card-1 .weather-date-info {
+  border-top-left-radius: 15px;
+}
+
+.weather-card-2 .weather-date-info {
+  background-color: #222530;
+}
+
+.weather-card-3,
+.weather-card-3 .weather-date-info {
+  border-top-right-radius: 15px;
+}
+
+.weather-card-2,
+.weather-card-2 .weather-card-body {
+  background: var(--bg-secondary);
+}
+
+.location {
+  font-size: 18px;
+}
+
+.weather-main-degree {
+  color: var(--white-color);
+}
+
+.weather-card-1 .weather-main-degree {
+  font-size: 70px;
+}
+
+.weather-card-2 .weather-main-degree,
+.weather-card-3 .weather-main-degree {
+  font-size: 24px;
+}
+
+.weather-desc {
+  color: var(--primary-color);
+}
+
+/* ---------------------Footer------------------*/
+footer {
+  background: var(--bg-secondary);
+  padding: 50px 0;
+}
+
+footer li {
+  font-size: 18px;
+  border-radius: 50%;
+  background-color: var(--bg-primary);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: var(--primary-color);
+  transition: color 0.5s, background-color 0.5s;
+}
+
+footer li:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+footer p a {
+  transition: color 0.5s;
+}
+
+footer p a:hover {
+  color: var(--primary-color);
+}
